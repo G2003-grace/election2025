@@ -1,8 +1,6 @@
 <?php
-// Inclusion du fichier de configuration pour la connexion à la base de données
 require_once '../config/db.php';
 
-// Début de la session PHP pour gérer les messages flash
 session_start();
 ?>
 <!DOCTYPE html>
@@ -10,13 +8,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion des Élections Présidentielles 2025</title>
-    
-    <!-- Inclusion de Bootstrap 5 pour le style -->
+    <title>Gestion des Élections Présidentielle 2025</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Barre de navigation -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="index.php">
