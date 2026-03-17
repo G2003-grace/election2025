@@ -1,0 +1,15 @@
+# Sécurisation du dossier uploads
+# Empêche l'accès direct aux fichiers PHP et autres scripts
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Autoriser l'accès aux images uniquement
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Empêcher l'indexation du dossier
+Options -Indexes
